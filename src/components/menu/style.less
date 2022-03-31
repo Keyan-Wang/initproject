@@ -1,0 +1,81 @@
+.app {
+  // sider背景色
+  .ant-layout-sider-light {
+    background: rgb(54, 54, 54);
+  }
+
+  // 菜单右侧边框
+  .ant-menu-inline,
+  .ant-menu-vertical,
+  .ant-menu-vertical-left {
+    border: none;
+  }
+
+  // 父级菜单被选中时的字体颜色
+  .ant-menu-submenu-selected {
+    color: #fff;
+  }
+
+  // 点击菜单背景取消背景闪烁
+  .ant-menu-item:active,
+  .ant-menu-submenu-title:active {
+    background: none;
+  }
+
+  // 子菜单选中时颜色
+  .ant-menu-item-selected {
+    color: #fff;
+  }
+
+  // 修复菜单右侧多出来的1px
+  .ant-menu-inline .ant-menu-item,
+  .ant-menu-inline .ant-menu-submenu-title {
+    width: 100%;
+  }
+
+  // 子菜单选中时背景色
+  .ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
+    background: none;
+  }
+
+  // 子菜单hover颜色渐变
+  .ant-menu-title-content {
+    transition: color 0.2s;
+  }
+
+  // 子菜单hover字体颜色
+  .ant-menu-light .ant-menu-item:hover,
+  .ant-menu-light .ant-menu-item-active,
+  .ant-menu-light .ant-menu:not(.ant-menu-inline) .ant-menu-submenu-open,
+  .ant-menu-light .ant-menu-submenu-active,
+  .ant-menu-light .ant-menu-submenu-title:hover {
+    color: #fff;
+  }
+
+  // 子菜单选中时右侧边框字体颜色
+  .ant-menu-vertical .ant-menu-item::after,
+  .ant-menu-vertical-left .ant-menu-item::after,
+  .ant-menu-vertical-right .ant-menu-item::after,
+  .ant-menu-inline .ant-menu-item::after {
+    display: none;
+  }
+
+  // 菜单折叠三角颜色
+  .ant-menu-submenu-arrow {
+    color: #c2c2c2;
+    transition: color 0.2s;
+  }
+
+  // 子菜单背景色
+  .ant-menu-sub.ant-menu-inline {
+    background: transparent;
+    color: #c2c2c2;
+    transition: color 0.2s;
+  }
+
+  // 子菜单hover时折叠三角颜色
+  .ant-menu-submenu:hover > .ant-menu-submenu-title > .ant-menu-submenu-expand-icon,
+  .ant-menu-submenu:hover > .ant-menu-submenu-title > .ant-menu-submenu-arrow {
+    color: #fff;
+  }
+}
